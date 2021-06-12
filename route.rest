@@ -1,0 +1,55 @@
+
+
+//*** Campaign endpoints 
+
+// get all campaigns 
+Get htttp://localhost:8000/campaigns/
+
+###
+// get one campaign by id 
+Get HTTP://localhost:8000/campaigns/??campaignId
+###
+
+//post campaigns with or without image 
+Post HTTP://localhost:8000/campaigns
+Content-Type: application/json
+
+{
+"campaign_title": "add-test2",
+"campaign_category": "add",
+"campaign_fundGoal": "add",
+"campaign_tagline": "add",
+"campaign_endingDate": "2020-12-20",
+"campaign_story": "add", 
+"campaign_url": "add", 
+"campaign_type": "add",
+"campaign_city": "add",
+"campaign_region":"add",
+"campaign_country": "add"
+}
+###
+
+//update campaign without image: 
+PATCH HTTP://localhost:8000/campaigns/??campaignId
+Content-Type: application/json
+
+{
+"campaign_title": "add",
+"campaign_category": "add",
+"campaign_fundGoal": "add",
+"campaign_tagline": "add",
+"campaign_endingDate": "2020-12-20",
+"campaign_story": "add", 
+"campaign_url": "add", 
+"campaign_type": "add",
+"campaign_city": "add",
+"campaign_region":"add",
+"campaign_country": "add"
+}
+###
+
+// delete one campaign by id 
+DELETE HTTP://localhost:8000/campaigns/??campaignId
+###
+
+
